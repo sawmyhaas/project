@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>CSS Website Layout</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+
+
+    /* Style the header */
+    .header {
+      background-color: #50203527;
+      padding: 20px;
+      text-align: left;
+    }
+
+
+    /* Create three equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 100px;
+    }
+
+
+
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media screen and (max-width:600px) {
+      .column {
+        width: 100%;
+      }
+
+    }
+
+    img {
+      height: 150px;
+      width: 30%;
+      float: right;
+      padding-right: 25px;
+      margin-top: 100px;
+
+    }
+
+    .left {
+      float: left;
+
+    }
+
+    .right {
+      float: right;
+    }
+
+    .footer {
+      bottom: 0;
+      left: 0;
+      position: bottom;
+      float: right;
+      text-align: center;
+      background-color: #e2531a27;
+      width: 100%;
+    }
+
+    .social {
+      right: 0;
+      bottom: 0;
+      position: bottom;
+      float: right;
+      padding-right: 10px;
+    }
+    .row{
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <body>
+
+    <header>
+      <div class="left">
+        Agriculture world
+      </div>
+      <div class="right">
+
+        <form>
+          <input type="email" title="Email" placeholder="Email">
+          <input type="password" title="username" placeholder="password">
+          <input type="submit" value="sing in"></button>
+        </form>
+      </div>
+    </header>
+    <div class="header">
+      <h1>HELLO AGRICULTURE</h1>
+      <p>The world's leading industry is agriculture.
+        The main need of livelihood is only agriculture
+      </p>
+    </div>
+    <div class="row">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/PivotWithDrops.JPG/800px-PivotWithDrops.JPG"
+        alt="A center pivot irrigation system">
+    </div>
+    <div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Fendt_Tractor_Ripping_up_Kulin.jpg"
+        alt="Tilling an arable field">
+    </div>
+    <div>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Farm_in_Hainan_01.jpg/800px-Farm_in_Hainan_01.jpg"
+        alt="China has the largest agricultural output of any country.">
+    </div>
+
+
+    <div class="row">
+      <div class="column">
+        <h2>Origins</h2>
+        <p>The development of agriculture enabled the human population to grow many times larger than could be
+          sustained by hunting and gathering.[9] Agriculture began independently in different parts of the
+          globe,[10] and included a diverse range of taxa, in at least 11 separate centres of origin.[7] Wild
+          grains were collected and eaten from at least 105,000 years ago.</p>
+      </div>
+
+      <div class="column">
+        <h2>Civilizations</h2>
+
+        <p>In Eurasia, the Sumerians started to live in villages from about 8,000 BC, relying on the Tigris and
+          Euphrates rivers and a canal system for irrigation. Ploughs appear in pictographs around 3,000 BC;
+          seed-ploughs around 2,300 BC. Farmers grew wheat, barley, vegetables such as lentils and onions, and
+          fruits including dates, grapes, and figs.</p>
+      </div>
+
+      <div class="column">
+        <h2>Status</h2>
+        <p>From the twentieth century, intensive agriculture increased productivity. It substituted synthetic
+          fertilizers and pesticides for labor, but caused increased water pollution, and often involved farm
+          subsidies. In recent years there has been a backlash against the environmental effects of
+          conventional agriculture, resulting in the organic, regenerative, and sustainable agriculture
+          movements.</p>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">2021 ABde haas</div>
+      <div class="social">
+        <a href="http://www.facebook.com/"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="http://www.instagram.com/"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="http://www.twitter.com/"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
+      </div>
+    </footer>
+  </body>
+
+</html>

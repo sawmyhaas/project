@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Javascript</h2>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+class student{
+  constructor(fname,lname,Birthyear){
+    this.fname=fname;
+    this.lname=lname;
+    this.Birthyear=Birthyear;
+  
+  
+}
+    age()
+  {
+      let date=new Date();
+      return date.getFullYear()-this.Birthyear;
+  }
+    fullname(){
+    
+      return this.fname+" "+this.lname;
+    }
+  
+  
+}
+student1=new student("sawmy","haas",1999);
+student2=new student("ruzky","hexxa",1997);
+document.getElementById('demo').innerHTML=student1.fullname()+"  His/Her Age is "+student1.age();
+document.getElementById('demo1').innerHTML=student2.fullname()+"  His/Her Age is "+student2.age();
+
+
+</script>
+
+</body>
+</html>
